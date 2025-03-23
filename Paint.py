@@ -20,15 +20,14 @@ PURPLE = (128, 0, 128)
 
 # Задний фон (чёрный)
 screen.fill(WHITE)
-Dict = {1 : 3, 2 : 4}
-print(Dict[1])
+
 # Кнопки выбора цветов
 COLOR_BUTTONS = [
     {"color": RED, "rect": pygame.Rect(10, 10, 50, 50)},
     {"color": YELLOW, "rect": pygame.Rect(70, 10, 50, 50)},
     {"color": GREEN, "rect": pygame.Rect(130, 10, 50, 50)},
     {"color": BLUE, "rect": pygame.Rect(190, 10, 50, 50)},
-    {"color": PURPLE, "rect": pygame.Rect(250, 10, 50, 50)}
+    {"color": BLACK, "rect": pygame.Rect(250, 10, 50, 50)}
 ]
 
 # Загрузка изображений инструментов
@@ -46,7 +45,7 @@ TOOLS = [
 eraser_button = pygame.Rect(680, 10, 50, 50)
 
 # Текущие настройки
-current_color = WHITE
+current_color = BLACK
 current_tool = "pencil"
 drawing = False
 start_pos = None
